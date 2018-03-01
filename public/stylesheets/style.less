@@ -1,0 +1,95 @@
+body {
+  padding: 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: darkgrey url("../images/bg1.jpg") no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: orange;
+  &:hover{
+    color: darkgoldenrod;
+    text-decoration: none;
+  }
+}
+
+span{
+  color: bisque;
+  font-size: 20px;
+}
+
+h1, h2{
+  color: goldenrod;
+}
+
+.header{
+  margin-top: 0;
+  background: rgba(0,0,0,0.5);
+  margin-right: -50px;
+  margin-left: -50px;
+  .navbar{
+    justify-content: space-around!important;
+    list-style: none;
+    padding-left: 0;
+    .navbar-item{
+      .social-net{
+        list-style: none;
+        padding-left: 0;
+        &-item{
+          display: inline-block;
+
+          a{
+            font-size: 30px;
+          }
+
+          .fa-facebook-f{
+            margin-right: 20px;
+          }
+
+        }
+      }
+      &-link-a{
+        font-size: 20px;
+      }
+      &:nth-child(3){
+        float: right;
+      }
+    }
+  }
+}
+
+.index{
+  .container{
+    position: relative;
+
+    &-central{
+      margin: 0 auto;
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+
+
+
+      &-inner{
+        width: 500px;
+        padding: 20px 10px;
+        text-align: center;
+        
+        .fa-envelope, .fa-phone{
+          color: goldenrod;
+        }
+
+        .logo{
+          position: relative;
+          margin: 0 auto;
+          background: url("../images/logo.png")no-repeat center;
+          background-size: 250px auto;
+          width: 250px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
